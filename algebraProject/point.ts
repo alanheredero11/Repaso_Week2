@@ -47,7 +47,7 @@ export class Point{
         return resultado;
     }
 
-    public calcularQuadrant():number{
+    public calculateQuadrant():number{
 
         let resultado: number = 0;
 
@@ -65,6 +65,26 @@ export class Point{
         }
         else if (this.x > 0 && this.y < 0) {
             resultado = 4;
+        }
+
+        return resultado;
+    }
+
+    public calculateNearest(points: Point[]):Point{
+
+
+        let resultado: Point = points[0];
+        let distance:number = this.calculateDistance(points[0]);
+
+        for (let i = 0; i < points.length; i++){
+
+            let newDistance = this.calculateDistance(points[i])
+            if (newDistance < distance){
+
+                distance = newDistance; 
+                resultado = points[i]
+            }
+
         }
 
         return resultado;
