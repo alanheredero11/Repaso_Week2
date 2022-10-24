@@ -67,7 +67,7 @@ function continent(country:string){
     console.log(resultado)
 }
 
-function isEven(number: number){
+export function isEven(number: number){
 
     if (number % 2 == 0){
         console.log("El numero es par");

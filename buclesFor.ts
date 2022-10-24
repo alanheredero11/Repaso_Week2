@@ -49,7 +49,7 @@ function isRainbow(colors: string[]){
 
 // isRainbow(["rojo", "negro", "azul", "magenta", "amarillo"])
 
-function add(myWords: string[]):number{
+export function add(myWords: string[]):number{
 
     let resultado: number = 0;
 
