@@ -37,5 +37,19 @@ export class Mobile{
         this.price = price;
     }
 
+    public printAll(){
+
+        console.log(
+
+                "\n The characteristiscs of the mobile " + this.name + " are: \n" +
+
+                "\n Name:           " + this.name +  
+                "\n Trademark:      " + this.trademark +  
+                "\n Model:          " + this.model +  
+                "\n Color:          " + this.color +  
+                "\n Price           " + this.price   
+        )
+    }
+
     
 }
