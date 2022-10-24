@@ -46,4 +46,27 @@ export class Point{
 
         return resultado;
     }
+
+    public calcularQuadrant():number{
+
+        let resultado: number = 0;
+
+        if(this.x == 0 || this.y == 0){
+            resultado = 0;
+        }
+        else if (this.x > 0 && this.y > 0) {
+            resultado = 1;
+        }
+        else if (this.x < 0 && this.y > 0) {
+            resultado = 2;
+        }
+        else if (this.x < 0 && this.y < 0) {
+            resultado = 3;
+        }
+        else if (this.x > 0 && this.y < 0) {
+            resultado = 4;
+        }
+
+        return resultado;
+    }
 }
