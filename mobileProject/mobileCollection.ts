@@ -37,5 +37,15 @@ export class MobileCollection{
 
         return resultado;
     }
+
+    public printCollection(){
+
+        for (let i = 0; i < this.mobiles.length; i++) {
+
+            this.mobiles[i].printAll()
+
+        }
+        console.log("\n Price overall: " + this.totalPrice)
+    }
     
 }
