@@ -14,4 +14,4 @@ let collection: MobileCollection = new MobileCollection(array_contenedor)
 // collection.setTotalPrice(1000)
 
 // console.log(collection.getMobiles())
-// console.log(collection.getTotalPrice())
+console.log(collection.getTotalPrice())
